@@ -1,8 +1,9 @@
 {
   "name": "vue-cap-ame",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "常用自定义指令,以及代码片段",
+  "author": "vkcyan <wu.vkcyan@gmail.com>",
   "main": "lib/Vue-cap-ame.umd.js",
   "keyword": "Vue directive",
   "scripts": {
@@ -14,6 +15,10 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vkcyan/vue-cap-ame"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.10.0",
