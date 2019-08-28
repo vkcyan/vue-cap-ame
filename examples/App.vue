@@ -11,7 +11,7 @@ export default {
     this.$showLoading()
     setTimeout(() => {
       this.$hideLoading()
-    }, 2000);
+    }, 20000);
   }
 }
 </script>

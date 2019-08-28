@@ -12,12 +12,38 @@
 
 
 
-2019-8-6 增加 **showLoading** **hideLoading**
+#### 全屏加载组件(2019-8-6 )
 
-这个在日常工作中太常使用了,写个组件什么的太麻烦,现在不需要了
+使用
+
+> npm i vue-cap-ame
+
+**main.js**(注册)
+
+```js
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+
+// --------------------------------------------------------
+import { showLoading, hideLoading } from 'vue-cap-ame';
+import 'vue-cap-ame/lib/Vue-cap-ame.css';
+Vue.prototype.$showLoading = showLoading;
+Vue.prototype.$hideLoading = hideLoading;
+// --------------------------------------------------------
+
+Vue.config.productionTip = false;
+
+new Vue({
+  router,
+  render: h => h(App)
+}).$mount('#app');
+
+```
+
+在任意组件内使用
 
 ```js
 this.$showLoading() // 打开遮掩层
 this.$hideLoading() // 关闭遮掩层
 ```
-
